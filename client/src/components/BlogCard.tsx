@@ -39,11 +39,13 @@ export default function BlogCard({ post }: BlogCardProps) {
           </p>
         </div>
 
-        <Link href={`/post/${post.id}`}>
-          <a className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground border-2 border-primary-border text-xs hover-elevate active-elevate-2 w-fit" data-testid={`button-read-${post.id}`}>
-            READ MORE
-            <ArrowRight className="w-3 h-3" />
-          </a>
+        <Link 
+          href={`/post/${post.id}`}
+          className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground border-2 border-primary-border text-xs hover-elevate active-elevate-2 w-fit" 
+          data-testid={`button-read-${post.id}`}
+        >
+          READ MORE
+          <ArrowRight className="w-3 h-3" />
         </Link>
       </div>
     </article>
